@@ -135,7 +135,8 @@
   display: none;
   justify-content: center;
   align-items: center;
-  position: relative; }
+  position: relative;
+  flex-direction: column; }
   #pad-calc .calc__end.visible {
     display: flex; }
 #pad-calc .calc__reset {
