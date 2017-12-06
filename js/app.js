@@ -95,7 +95,7 @@ Pad.Carousel = {
   calculate: function() {
     let totalSavings = 0;
 
-    const $properties = $('#properties');
+    const $properties = $('#noOfProperties');
     console.log($properties.length);
     console.log('value', $properties.val());
     console.log($properties.length && !!$properties.val());
