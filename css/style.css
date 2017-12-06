@@ -228,7 +228,8 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  flex-direction: column; }
+  flex-direction: column;
+  height: 60px; }
   #pad-calc .calc__end.visible {
     display: flex; }
 #pad-calc .calc__reset {

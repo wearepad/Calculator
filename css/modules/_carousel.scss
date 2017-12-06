@@ -40,6 +40,7 @@
       align-items: center;
       position: relative;
       flex-direction: column;
+      height: 60px;
       &.visible {
         display: flex;
       }
