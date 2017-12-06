@@ -133,7 +133,7 @@ Pad.Carousel = {
     this.$resultYearly.text('£' + totalYearlySavings.toFixed(2));
     this.toggleButtons();
 
-    this.userFocused = true;
+    this.userFocused = false;
   },
   options: {
     infinite: false,
