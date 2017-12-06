@@ -31,6 +31,9 @@ Pad.Carousel = {
     const questions = this.questions[this.version];
 
     questions.reverse().forEach(function (question){
+      let tip = '';
+      if(question.tip) tip = `<div class="slide__tip">${question.tip}</div>`;
+      console.log(tip);
       let logos = '';
       if(question.logos) {
         let images = '';
@@ -50,6 +53,7 @@ Pad.Carousel = {
               <input type="number" id="${question.id}" placeholder="0" min="0">
             </div>
             ${logos}
+            ${tip}
           </div>
         </div>
       `;
@@ -144,30 +148,35 @@ Pad.Carousel = {
         text: 'How much do you spend on <strong>clothing</strong> per month?',
         saving: 0.08,
         id: 'clothing',
-        logos: ['https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce6eae0b670001168992_topshop.jpg', 'https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce61564b3a000140b6a2_gap.jpg', 'https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce647a305e0001536d81_new-look.jpg', 'https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce6a7a305e0001536d88_river-island.jpg', 'https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce66ae0b67000116898e_house-of-fraser.jpg', 'https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce669ef8d4000165bfdf_john-lewis.jpg']
+        tip: 'Need some new threads? Pad members can save 8% on average across high street brands, from Topshop and River Island to John Lewis and House of Fraser 👗',
+        logos: ['https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce6eae0b670001168992_topshop.jpg',  'https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce647a305e0001536d81_new-look.jpg', 'https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce6a7a305e0001536d88_river-island.jpg', 'https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce66ae0b67000116898e_house-of-fraser.jpg', 'https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce669ef8d4000165bfdf_john-lewis.jpg']
       },
       {
         text: 'How much do you spend on <strong>eating out</strong> per month?',
         saving: 0.12,
         id: 'eating',
-        logos: ['https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce69da590200018f7005_pizza-express.jpg', 'https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce6b564b3a000140b6aa_tgi-fridays.jpg', 'https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce64ae0b67000116898c_ask-italian.jpg', 'https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce6eae0b670001168993_yo-sushi.jpg', 'https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce70cd88f80001c06c82_zizzi.jpg', 'https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce69ae0b67000116898f_papa-johns.jpg'] // cafe-rouge
+        tip: 'In the mood for sushi? Or how about Italian? Pad members can save 12% on average on their food bill when eating out 🍕',
+        logos: ['https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce69da590200018f7005_pizza-express.jpg', 'https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce6b564b3a000140b6aa_tgi-fridays.jpg', 'https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce64ae0b67000116898c_ask-italian.jpg', 'https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce6eae0b670001168993_yo-sushi.jpg', 'https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce70cd88f80001c06c82_zizzi.jpg']
       },
       {
         text: 'How much do you spend on <strong>health & beauty</strong> per month?',
         saving: 0.08,
         id: 'health',
+        tip: 'Getting ready for a big night out? Pad members can save 8% on average at Boots, The Body Shop and Spafinder 💅',
         logos: ['https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce65564b3a000140b6a4_boots.jpg', 'https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce6cda590200018f7008_body-shop.jpg']
       },
       {
         text: 'How much do you spend on <strong>groceries</strong> per month?',
         saving: 0.05,
         id: 'groceries',
+        tip: 'Agreed to cook dinner for your flatmates? Pad members can save 5% on average at Sainsburys, Asda and Marks & Spencer 🍳',
         logos: ['https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce6d9ef8d4000165bfe2_waitrose.jpg', 'https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce687a305e0001536d86_marks-and-spencer.jpg', 'https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce68564b3a000140b6a8_sainsburys.jpg']
       },
       {
         text: 'How much do you spend on <strong>coffee</strong> per month?',
         saving: 0.10,
         id: 'coffee',
+        tip: 'Need that caffeine fix? Pad members save 10% at Cafe Nero ☕️',
         logos: ['https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce667a305e0001536d84_cafe-nero.jpg']
       },
       {
