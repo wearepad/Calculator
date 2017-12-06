@@ -125,7 +125,7 @@ Pad.Carousel = {
       totalYearlySavings = totalMonthlySavings * 12;
     }
 
-    window.addthis_share.title = `I just found out I could save £${totalYearlySavings} a year with Pad!`;
+    if(window.addthis_share) window.addthis_share.title = `I just found out I could save £${totalYearlySavings} a year with Pad!`;
 
     this.$resultMonthly.text('£' + totalMonthlySavings.toFixed(2));
     this.$resultYearly.text('£' + totalYearlySavings.toFixed(2));

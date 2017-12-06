@@ -28,6 +28,10 @@
   }
 
   .calc {
+    &__share {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
     &__end {
       display: none;
       justify-content: center;
@@ -51,6 +55,7 @@
       padding: 0;
       position: absolute;
       right: 0;
+      bottom: 0;
       &:focus {
         outline: 0 !important;
       }

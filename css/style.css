@@ -131,6 +131,9 @@
   justify-content: center;
   flex-wrap: wrap;
   text-align: center; }
+#pad-calc .calc__share {
+  font-size: 18px;
+  margin-bottom: 10px; }
 #pad-calc .calc__end {
   display: none;
   justify-content: center;
@@ -148,7 +151,8 @@
   font-family: 'Campton book', sans-serif;
   padding: 0;
   position: absolute;
-  right: 0; }
+  right: 0;
+  bottom: 0; }
   #pad-calc .calc__reset:focus {
     outline: 0 !important; }
 @media only screen and (max-width: 767px) {
