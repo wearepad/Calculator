@@ -1,3 +1,45 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+.calc {
+  /* HTML5 display-role reset for older browsers */ }
+  .calc div, .calc span, .calc applet, .calc object, .calc iframe,
+  .calc h1, .calc h2, .calc h3, .calc h4, .calc h5, .calc h6, .calc p, .calc blockquote, .calc pre,
+  .calc a, .calc abbr, .calc acronym, .calc address, .calc big, .calc cite, .calc code,
+  .calc del, .calc dfn, .calc em, .calc img, .calc ins, .calc kbd, .calc q, .calc s, .calc samp,
+  .calc small, .calc strike, .calc strong, .calc sub, .calc sup, .calc tt, .calc var,
+  .calc b, .calc u, .calc i, .calc center,
+  .calc dl, .calc dt, .calc dd, .calc ol, .calc ul, .calc li,
+  .calc fieldset, .calc form, .calc label, .calc legend,
+  .calc table, .calc caption, .calc tbody, .calc tfoot, .calc thead, .calc tr, .calc th, .calc td,
+  .calc article, .calc aside, .calc canvas, .calc details, .calc embed,
+  .calc figure, .calc figcaption, .calc footer, .calc header, .calc hgroup,
+  .calc menu, .calc nav, .calc output, .calc ruby, .calc section, .calc summary,
+  .calc time, .calc mark, .calc audio, .calc video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
+  .calc article, .calc aside, .calc details, .calc figcaption, .calc figure,
+  .calc footer, .calc header, .calc hgroup, .calc menu, .calc nav, .calc section {
+    display: block; }
+  .calc body {
+    line-height: 1; }
+  .calc ol, .calc ul {
+    list-style: none; }
+  .calc blockquote, .calc q {
+    quotes: none; }
+  .calc blockquote:before, .calc blockquote:after,
+  .calc q:before, .calc q:after {
+    content: '';
+    content: none; }
+  .calc table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
 @font-face {
   font-family: 'Campton';
   src: url("../fonts/Campton-Black.otf") format("opentype");
@@ -78,48 +120,6 @@
   src: url("../fonts/Campton-Thin-Italic.otf") format("opentype");
   font-weight: 100;
   font-style: italic; }
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-.calc {
-  /* HTML5 display-role reset for older browsers */ }
-  .calc div, .calc span, .calc applet, .calc object, .calc iframe,
-  .calc h1, .calc h2, .calc h3, .calc h4, .calc h5, .calc h6, .calc p, .calc blockquote, .calc pre,
-  .calc a, .calc abbr, .calc acronym, .calc address, .calc big, .calc cite, .calc code,
-  .calc del, .calc dfn, .calc em, .calc img, .calc ins, .calc kbd, .calc q, .calc s, .calc samp,
-  .calc small, .calc strike, .calc strong, .calc sub, .calc sup, .calc tt, .calc var,
-  .calc b, .calc u, .calc i, .calc center,
-  .calc dl, .calc dt, .calc dd, .calc ol, .calc ul, .calc li,
-  .calc fieldset, .calc form, .calc label, .calc legend,
-  .calc table, .calc caption, .calc tbody, .calc tfoot, .calc thead, .calc tr, .calc th, .calc td,
-  .calc article, .calc aside, .calc canvas, .calc details, .calc embed,
-  .calc figure, .calc figcaption, .calc footer, .calc header, .calc hgroup,
-  .calc menu, .calc nav, .calc output, .calc ruby, .calc section, .calc summary,
-  .calc time, .calc mark, .calc audio, .calc video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline; }
-  .calc article, .calc aside, .calc details, .calc figcaption, .calc figure,
-  .calc footer, .calc header, .calc hgroup, .calc menu, .calc nav, .calc section {
-    display: block; }
-  .calc body {
-    line-height: 1; }
-  .calc ol, .calc ul {
-    list-style: none; }
-  .calc blockquote, .calc q {
-    quotes: none; }
-  .calc blockquote:before, .calc blockquote:after,
-  .calc q:before, .calc q:after {
-    content: '';
-    content: none; }
-  .calc table {
-    border-collapse: collapse;
-    border-spacing: 0; }
-
 body {
   background-color: #fff6f5; }
 
@@ -263,17 +263,14 @@ body {
   justify-content: center; }
   #pad-calc .slide__logos img {
     height: 75px;
-    margin-bottom: 10px;
-    margin-right: 30px; }
-    #pad-calc .slide__logos img:first-of-type {
-      margin-left: 30px; }
+    margin: 0 15px 10px; }
     @media only screen and (max-width: 991px) {
       #pad-calc .slide__logos img {
         height: 50px; }
         #pad-calc .slide__logos img:first-of-type {
-          margin-left: 15px; }
+          margin-left: 10px; }
         #pad-calc .slide__logos img:not(:last-of-type) {
-          margin-right: 15px; } }
+          margin-right: 10px; } }
 #pad-calc .slide__tip {
   background-color: #f7f7f7;
   padding: 15px;
