@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pad Calculator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" charset="utf-8"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="calc__wrapper">
+        <div class="calc" id="pad-calc" data-version="landlord">
+          <h1 class="calc__heading">How much could you save? ✨</h1>
+          <div class="calc__carousel">
+            <div>
+              <div class="calc__carousel__slide">
+                <h2 class="slide__heading">How many properties do you have?</h2>
+                <div class="slide__input slide__input--regular">
+                  <input type="number" id="properties" placeholder="0">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="calc__carousel__slide">
+                <h2 class="slide__result__heading">You could save <span class="slide__result__saving--month">£10</span> every month.</h2>
+                <h3 class="slide__result__subheading">That's <span class="slide__result__saving--year">£10</span> a year!</h3>
+                <img src="images/piggy.png" alt="Pad" width="250">
+              </div>
+            </div>
+          </div>
+          <div class="calc__end">
+            <a class="calc__get-started" href="#email-form">Sign Up</a>
+            <button class="calc__reset">Start again?</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

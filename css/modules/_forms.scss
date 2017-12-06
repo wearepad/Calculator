@@ -1,0 +1,29 @@
+#pad-calc {
+  // remove the up and down arrows on the number input
+  .calc {
+    input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+
+    &__input {
+      background-color: transparent;
+      border: 0;
+      font-weight: 400;
+      font-family: 'Campton book', sans-serif;
+      border-radius: 0;
+      box-shadow: none !important;
+      -webkit-appearance: none;
+      &:focus {
+        outline: 0 !important;
+      }
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: $black;
+      }
+    }
+  }
+}

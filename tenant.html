@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pad Calculator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" charset="utf-8"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div id="pad-calc">
+        <div class="calc" data-version="tenant">
+          <h1 class="calc__heading">How much could you save? ✨</h1>
+          <div class="calc__carousel">
+            <div>
+              <div class="calc__carousel__slide">
+                <h2 class="slide__heading">Additional lifestyle savings per month</h2>
+                <div class="slide__additional">
+                  <table>
+                    <tr>
+                      <td>Netflix</td>
+                      <td>£7.99</td>
+                    </tr>
+                    <tr>
+                      <td>Cleaning</td>
+                      <td>£20</td>
+                    </tr>
+                    <tr>
+                      <td>Wifi</td>
+                      <td>£12</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="note">
+                  <h4>Did you know? 🤔</h4>
+                  <p>All pads come with wifi, monthly cleans, Netflix and Google Home included. Plus, you won't have to pay any agency fees!</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="calc__carousel__slide">
+                <h2 class="slide__heading">How much was your deposit?</h2>
+                <div class="slide__input">
+                  <label for="deposit">£</label>
+                  <input type="number" id="deposit" placeholder="0">
+                </div>
+                <div class="note">
+                  <h4>Did you know? 🤔</h4>
+                  <p>On average, renters will loose <strong>40%</strong> of their deposit. When you become a Pad member, you'll never have to fork out for a deposit again.</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="calc__carousel__slide">
+                <h2 class="slide__result__heading">You could save <span class="slide__result__saving--month">£10</span> every month.</h2>
+                <h3 class="slide__result__subheading">That's <span class="slide__result__saving--year">£10</span> a year!</h3>
+                <img src="images/piggy.png" alt="Pad" width="250">
+              </div>
+            </div>
+          </div>
+          <div class="calc__end">
+            <a class="calc__get-started" href="#email-form">Sign Up</a>
+            <button class="calc__reset">Start again?</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

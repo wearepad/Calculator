@@ -1,0 +1,33 @@
+#pad-calc {
+  .calc {
+    &__button {
+      background-color: $pink;
+      color: white;
+      display: flex;
+      overflow: hidden;
+      height: 60px;
+      float: none;
+      clear: none;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      padding-left: 30px;
+      padding-right: 30px;
+      border: 0;
+      line-height: inherit;
+      text-decoration: none;
+      font-weight: 400;
+      font-family: 'Campton book', sans-serif;
+      cursor: pointer;
+      border-radius: 0;
+      &:hover {
+        background-color: $pink-hover;
+        color: #fff;
+      }
+      &:focus {
+        outline: 0 !important;
+      }
+    }
+  }
+}
