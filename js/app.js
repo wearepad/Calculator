@@ -34,7 +34,6 @@ Pad.Carousel = {
     questions.forEach(function (question){
       let tip = '';
       if(question.tip) tip = `<div class="slide__tip">${question.tip}</div>`;
-      console.log(tip);
       let logos = '';
       if(question.logos) {
         let images = '';
@@ -65,12 +64,12 @@ Pad.Carousel = {
   initCarousel: function() {
     this.$carousel.slick(this.options);
     this.$slides = $('.slick-slide');
-    this.$inputs = $('.slide__input input');
     this.$next = $('.calc__carousel__next');
 
     this.addEventListeners();
   },
   addEventListeners: function() {
+    this.$inputs = $('.slide__input input');
     this.$reset.on('click', this.resetCarousel.bind(this));
 
     this.$carousel.on('beforeChange', function(slick, currentSlide, index){
@@ -82,11 +81,13 @@ Pad.Carousel = {
     }.bind(this));
 
     // not working on webflow and can't work out why
-    this.$inputs.on('focus', function() {
-      this.userFocused = true;
-    }.bind(this)).on('blur', function() {
-      this.userFocused = false;
-    }.bind(this));
+    setTimeout(function() {
+      this.$inputs.on('focus', function() {
+        this.userFocused = true;
+      }.bind(this)).on('blur', function() {
+        this.userFocused = false;
+      }.bind(this));
+    }.bind(this), 500);
 
     $(window).on('keypress', function(e) { // go to next slide if user presses enter whilst focused on an input
       if(e.keyCode === 13 && this.userFocused) this.$carousel.slick('slickNext');
@@ -96,11 +97,7 @@ Pad.Carousel = {
     let totalSavings = 0;
 
     const $properties = $('#noOfProperties');
-    console.log($properties.length);
-    console.log('value', $properties.val());
-    console.log($properties.length && !!$properties.val());
     const noOfProperties = ($properties.length && !!$properties.val()) ? $properties.val() : 1;
-    console.log('noOfProperties', noOfProperties);
 
     const $despoit = $('#deposit');
     if ($despoit.length) {
