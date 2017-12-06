@@ -81,13 +81,9 @@ Pad.Carousel = {
     }.bind(this));
 
     // not working on webflow and can't work out why
-    setTimeout(function() {
-      this.$inputs.on('focus', function() {
-        this.userFocused = true;
-      }.bind(this)).on('blur', function() {
-        this.userFocused = false;
-      }.bind(this));
-    }.bind(this), 500);
+    this.$inputs.on('click', function() {
+      this.userFocused = true;
+    }.bind(this));
 
     $(window).on('keypress', function(e) { // go to next slide if user presses enter whilst focused on an input
       if(e.keyCode === 13 && this.userFocused) this.$carousel.slick('slickNext');
@@ -136,6 +132,8 @@ Pad.Carousel = {
     this.$resultMonthly.text('£' + totalMonthlySavings.toFixed(2));
     this.$resultYearly.text('£' + totalYearlySavings.toFixed(2));
     this.toggleButtons();
+
+    this.userFocused = true;
   },
   options: {
     infinite: false,
