@@ -238,10 +238,7 @@ body {
   cursor: pointer;
   font-weight: 400;
   font-family: 'Campton book', sans-serif;
-  padding: 0;
-  position: absolute;
-  right: 0;
-  bottom: 0; }
+  padding: 0; }
   #pad-calc .calc__reset:focus {
     outline: 0 !important; }
 @media only screen and (max-width: 767px) {
