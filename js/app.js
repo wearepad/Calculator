@@ -97,6 +97,7 @@ Pad.Carousel = {
 
     const $properties = $('#properties');
     const noOfProperties = ($properties.length && !!$properties.val()) ? $properties.val() : 1;
+    console.log('noOfProperties', noOfProperties);
 
     const $despoit = $('#deposit');
     if ($despoit.length) {
@@ -229,7 +230,7 @@ Pad.Carousel = {
         id: 'certificates'
       },
       {
-        text: 'How much do you spend on <strong>legal</strong> per property each year?',
+        text: 'How much do you spend on any <strong>legal fees</strong> per property each year?',
         saving: 1,
         id: 'legal'
       }
