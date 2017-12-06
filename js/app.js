@@ -96,6 +96,9 @@ Pad.Carousel = {
     let totalSavings = 0;
 
     const $properties = $('#properties');
+    console.log($properties.length);
+    console.log(!!$properties.val());
+    console.log($properties.length && !!$properties.val());
     const noOfProperties = ($properties.length && !!$properties.val()) ? $properties.val() : 1;
     console.log('noOfProperties', noOfProperties);
 
