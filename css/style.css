@@ -232,6 +232,10 @@ body {
   height: 60px; }
   #pad-calc .calc__end.visible {
     display: flex; }
+  #pad-calc .calc__end--landlord {
+    height: auto; }
+    #pad-calc .calc__end--landlord .calc__get-started {
+      margin-bottom: 20px; }
 #pad-calc .calc__reset {
   background-color: transparent;
   font-size: 12px;

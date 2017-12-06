@@ -28,9 +28,10 @@ Pad.Carousel = {
     this.$buttons.toggleClass('visible');
   },
   appendSlides: function() {
+    const $insert = $('#insert');
     const questions = this.questions[this.version];
 
-    questions.reverse().forEach(function (question){
+    questions.forEach(function (question){
       let tip = '';
       if(question.tip) tip = `<div class="slide__tip">${question.tip}</div>`;
       console.log(tip);
@@ -58,7 +59,7 @@ Pad.Carousel = {
         </div>
       `;
       const $slide = $(html);
-      this.$carousel.prepend($slide);
+      $insert.before($slide);
     }.bind(this));
   },
   initCarousel: function() {

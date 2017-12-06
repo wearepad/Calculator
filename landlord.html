@@ -11,8 +11,8 @@
   </head>
   <body>
     <div class="container">
-      <div class="calc__wrapper">
-        <div class="calc" id="pad-calc" data-version="landlord">
+      <div id="pad-calc">
+        <div class="calc" data-version="landlord">
           <h1 class="calc__heading">How much could you save? ✨</h1>
           <div class="calc__carousel">
             <div>
@@ -23,7 +23,7 @@
                 </div>
               </div>
             </div>
-            <div>
+            <div id="insert">
               <div class="calc__carousel__slide">
                 <h2 class="slide__result__heading">You could save <span class="slide__result__saving--month">£10</span> every month.</h2>
                 <h3 class="slide__result__subheading">That's <span class="slide__result__saving--year">£10</span> a year!</h3>
@@ -31,8 +31,8 @@
               </div>
             </div>
           </div>
-          <div class="calc__end">
-            <a class="calc__get-started" href="#email-form">Sign Up</a>
+          <div class="calc__end calc__end--landlord">
+            <a class="calc__get-started calc__get-started get-started-button" href="#" data-ix="popup">Get Started</a>
             <button class="calc__reset">Start again?</button>
           </div>
         </div>

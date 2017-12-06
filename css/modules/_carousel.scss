@@ -44,6 +44,12 @@
       &.visible {
         display: flex;
       }
+      &--landlord {
+        height: auto;
+        .calc__get-started {
+          margin-bottom: 20px;
+        }
+      }
     }
     &__get-started {
       @extend .calc__button;
