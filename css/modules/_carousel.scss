@@ -98,20 +98,36 @@
         margin: 0 15px 10px;
         @media only screen and (max-width: 991px) {
           height: 50px;
-          &:first-of-type {
-            margin-left: 10px;
-          }
-          &:not(:last-of-type) {
-            margin-right: 10px;
+          margin: 0 10px 10px;
+        }
+      }
+      @media only screen and (max-width: 767px) {
+        display: none;
+        img {
+          margin: 0 10px 5px;
+          &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+            display: block;
           }
         }
       }
     }
     &__tip {
-      background-color: #f7f7f7;
+      background-color: $blue;
+      color: white;
       padding: 15px;
-      margin-top: 20px;
-      border-radius: 5px;
+      font-size: 17px;
+      line-height: 1.4;
+      margin: 30px 80px 0;
+      @media only screen and (max-width: 991px) {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+      }
+      @media only screen and (max-width: 767px) {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 15px;
+      }
     }
     &__input {
       position: relative;
@@ -126,6 +142,9 @@
         width: 150px;
         position: relative;
         top: -2px;
+      }
+      @media only screen and (max-width: 767px) {
+        margin-bottom: 0;
       }
       &--regular {
         input {

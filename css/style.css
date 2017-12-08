@@ -270,16 +270,32 @@ body {
     margin: 0 15px 10px; }
     @media only screen and (max-width: 991px) {
       #pad-calc .slide__logos img {
-        height: 50px; }
-        #pad-calc .slide__logos img:first-of-type {
-          margin-left: 10px; }
-        #pad-calc .slide__logos img:not(:last-of-type) {
-          margin-right: 10px; } }
+        height: 50px;
+        margin: 0 10px 10px; } }
+  @media only screen and (max-width: 767px) {
+    #pad-calc .slide__logos {
+      display: none; }
+      #pad-calc .slide__logos img {
+        margin: 0 10px 5px; }
+        #pad-calc .slide__logos img:nth-child(1), #pad-calc .slide__logos img:nth-child(2), #pad-calc .slide__logos img:nth-child(3) {
+          display: block; } }
 #pad-calc .slide__tip {
-  background-color: #f7f7f7;
+  background-color: #06deff;
+  color: white;
   padding: 15px;
-  margin-top: 20px;
-  border-radius: 5px; }
+  font-size: 17px;
+  line-height: 1.4;
+  margin: 30px 80px 0; }
+  @media only screen and (max-width: 991px) {
+    #pad-calc .slide__tip {
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 20px; } }
+  @media only screen and (max-width: 767px) {
+    #pad-calc .slide__tip {
+      margin-left: 10px;
+      margin-right: 10px;
+      font-size: 15px; } }
 #pad-calc .slide__input {
   position: relative;
   margin-bottom: 20px; }
@@ -292,6 +308,9 @@ body {
     width: 150px;
     position: relative;
     top: -2px; }
+  @media only screen and (max-width: 767px) {
+    #pad-calc .slide__input {
+      margin-bottom: 0; } }
   #pad-calc .slide__input--regular input {
     padding: 16px 12px 12px 12px; }
   #pad-calc .slide__input label {
