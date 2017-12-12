@@ -191,47 +191,44 @@ Pad.Carousel = {
       {
         text: 'How much do you spend on <strong>finding a tenant</strong> for a property?',
         saving: 1,
-        id: 'finding'
+        id: 'finding',
+        tip: 'We\'ve found that landlords spend on average between 12% and £89 fixed. There are quite a lot of options out there, but none come near us.'
       },
       {
         text: 'How much do you spend on <strong>tenant and property management</strong> per property each year?',
         saving: 1,
-        id: 'management'
+        id: 'management',
+        tip: 'Pad have built an app to log all tenant issues and maintenance claims. Our team are there to handle these fast. '
       },
       {
         text: 'How much do you spend on <strong>maintenance</strong> per property each year?',
         saving: 1,
-        id: 'maintenance'
+        id: 'maintenance',
+        tip: 'Whether it\'s a broken shower, damp, mice, or blocked plumping, you\'re covered with PadCare. Sit back and relax, we\'ll pick up the bill.'
       },
       {
         text: 'How much do you spend on <strong>wifi</strong> per property each year?',
         saving: 1,
-        id: 'wifi'
+        id: 'wifi',
+        tip: 'Our pads have fibre wifi set up by move in day, with the cost rolled in.'
       },
       {
         text: 'How much do you spend on <strong>cleaning</strong> per property each year?',
         saving: 1,
-        id: 'cleaning'
+        id: 'cleaning',
+        tip: 'We clean all of our pads once a month, and include a professional end of tenancy clean.'
       },
       {
         text: 'How much do you spend on <strong>building insurance</strong> per property each year?',
         saving: 0.5,
-        id: 'building-insurance'
+        id: 'building-insurance',
+        tip: 'We\'ve built an algoritum which enables us to issue building cover fast and cheaply.'
       },
       {
         text: 'How much do you spend on <strong>landlord insurance</strong> per property each year?',
         saving: 1,
-        id: 'landlord-insurance'
-      },
-      {
-        text: 'How much do you spend on <strong>certificates</strong> per property each year?',
-        saving: 0.5,
-        id: 'certificates'
-      },
-      {
-        text: 'How much do you spend on any <strong>legal fees</strong> per property each year?',
-        saving: 1,
-        id: 'legal'
+        id: 'landlord-insurance',
+        tip: 'We throw this in for free with all managed properties. Legal costs are covered as standard.'
       }
     ]
   },
