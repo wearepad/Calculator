@@ -129,8 +129,8 @@ Pad.Carousel = {
 
     if(window.addthis_share) window.addthis_share.title = `I just found out I could save £${totalYearlySavings} a year with Pad!`;
 
-    this.$resultMonthly.text('£' + totalMonthlySavings.toFixed(2));
-    this.$resultYearly.text('£' + totalYearlySavings.toFixed(2));
+    this.$resultMonthly.text('£' + Math.round(totalMonthlySavings));
+    this.$resultYearly.text('£' + Math.round(totalYearlySavings));
     this.toggleButtons();
 
     this.userFocused = false;
@@ -198,7 +198,7 @@ Pad.Carousel = {
         text: 'How much do you spend on <strong>tenant and property management</strong> per property each year?',
         saving: 1,
         id: 'management',
-        tip: 'Pad have built an app to log all tenant issues and maintenance claims. Our team are there to handle these fast. '
+        tip: 'Pad have built an app to log all tenant issues and maintenance claims. Our team are there to handle these fast.'
       },
       {
         text: 'How much do you spend on <strong>maintenance</strong> per property each year?',
@@ -222,7 +222,7 @@ Pad.Carousel = {
         text: 'How much do you spend on <strong>building insurance</strong> per property each year?',
         saving: 0.5,
         id: 'building-insurance',
-        tip: 'We\'ve built an algoritum which enables us to issue building cover fast and cheaply.'
+        tip: 'We\'ve built an algorithm which enables us to issue building cover fast and cheaply.'
       },
       {
         text: 'How much do you spend on <strong>landlord insurance</strong> per property each year?',
