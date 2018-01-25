@@ -1,4 +1,9 @@
 #pad-calc {
+  .present {
+    width: 150px;
+    margin-top: 20px;
+  }
+
   .slick-track, .slick-slide, .slick-slider {
     &:focus {
       outline: none !important;
@@ -175,7 +180,7 @@
         width: 100%;
         margin-bottom: 10px;
       }
-      &__saving--month, &__saving--year {
+      &__saving--month, &__saving--year, &__saving--year-per-prop {
         font-weight: 700;
       }
     }

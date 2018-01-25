@@ -204,6 +204,9 @@ body {
     /* Chrome/Opera/Safari */
     color: #333; }
 
+#pad-calc .present {
+  width: 150px;
+  margin-top: 20px; }
 #pad-calc .slick-track:focus, #pad-calc .slick-slide:focus, #pad-calc .slick-slider:focus {
   outline: none !important; }
 #pad-calc .slick-list {
@@ -332,7 +335,7 @@ body {
   font-weight: 300;
   width: 100%;
   margin-bottom: 10px; }
-#pad-calc .slide__result__saving--month, #pad-calc .slide__result__saving--year {
+#pad-calc .slide__result__saving--month, #pad-calc .slide__result__saving--year, #pad-calc .slide__result__saving--year-per-prop {
   font-weight: 700; }
 #pad-calc .slide__additional {
   width: 100%; }

@@ -12,6 +12,8 @@ Pad.Carousel = {
     this.$carousel = $('.calc__carousel');
     this.$resultMonthly = $('.slide__result__saving--month');
     this.$resultYearly = $('.slide__result__saving--year');
+    this.$noOfProperties = $('.slide__result__no-of-properties');
+    this.$resultYearlyPerProp = $('.slide__result__saving--year-per-prop');
     this.$reset = $('.calc__reset');
     this.$buttons = $('.calc__end');
 
@@ -129,6 +131,8 @@ Pad.Carousel = {
 
     if(window.addthis_share) window.addthis_share.title = `I just found out I could save £${totalYearlySavings} a year with Pad!`;
 
+    this.$noOfProperties.text(noOfProperties);
+    this.$resultYearlyPerProp.text('£' + Math.round(totalYearlySavings / noOfProperties));
     this.$resultMonthly.text('£' + Math.round(totalMonthlySavings));
     this.$resultYearly.text('£' + Math.round(totalYearlySavings));
     this.toggleButtons();
@@ -205,18 +209,6 @@ Pad.Carousel = {
         saving: 1,
         id: 'maintenance',
         tip: 'Whether it\'s a broken shower, damp, mice, or blocked plumping, you\'re covered with PadCare. Sit back and relax, we\'ll pick up the bill.'
-      },
-      {
-        text: 'How much do you spend on <strong>wifi</strong> per property each year?',
-        saving: 1,
-        id: 'wifi',
-        tip: 'Our pads have fibre wifi set up by move in day, with the cost rolled in.'
-      },
-      {
-        text: 'How much do you spend on <strong>cleaning</strong> per property each year?',
-        saving: 1,
-        id: 'cleaning',
-        tip: 'We clean all of our pads once a month, and include a professional end of tenancy clean.'
       },
       {
         text: 'How much do you spend on <strong>building insurance</strong> per property each year?',
