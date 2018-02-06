@@ -283,8 +283,8 @@ body {
         #pad-calc .slide__logos img:nth-child(1), #pad-calc .slide__logos img:nth-child(2), #pad-calc .slide__logos img:nth-child(3) {
           display: block; } }
 #pad-calc .slide__tip {
-  background-color: #06deff;
-  color: white;
+  background-color: #ddfbff;
+  color: #0e0e0e;
   padding: 15px;
   font-size: 17px;
   line-height: 1.4;

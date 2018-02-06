@@ -173,14 +173,14 @@ Pad.Carousel = {
         text: 'How much do you spend on <strong>groceries</strong> per month?',
         saving: 0.05,
         id: 'groceries',
-        tip: 'Cooking dinner for your flatmates? Pad members can save 5% on average at Sainsburys, Asda and Marks & Spencer.',
+        tip: 'Cooking dinner for your flatmates? Pad members can save 5% on average at Waitrose, M&S and Sainsbury’s',
         logos: ['https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce6d9ef8d4000165bfe2_waitrose.jpg', 'https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce687a305e0001536d86_marks-and-spencer.jpg', 'https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce68564b3a000140b6a8_sainsburys.jpg']
       },
       {
         text: 'How much do you spend on <strong>coffee</strong> per month?',
         saving: 0.10,
         id: 'coffee',
-        tip: 'Need that caffeine fix? Pad members save 10% at Cafe Nero.',
+        tip: 'Need that caffeine fix? Pad members save 10% at Caffè Nero.',
         logos: ['https://daks2k3a4ib2z.cloudfront.net/59df4f1b14d0c5000130e3e2/5a27ce667a305e0001536d84_cafe-nero.jpg']
       },
       {
